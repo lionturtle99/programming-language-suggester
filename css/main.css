@@ -16,6 +16,11 @@ form {
   border: solid black 1px;
   padding: 3em;
 }
-label {
-  display: block;
+h6 {
+  margin-top: 15px;
+  color:rgb(0, 0, 0);
+}
+footer {
+  margin: 3em 0 3em;
+  text-align: center;
 }

@@ -12,39 +12,66 @@
 <body>
   <h1>Programming Language Suggester</h1>
   <form id="form1">
-    <label for="sign">Astrological Sign
-      <input id="sign" type="text" name="sign" required>
-    </label>
-      <label for="drink">
-      <input id="coffee" type="radio" name="drink" checked>
-      <input id="tea" type="radio" name="drink">
-      <input id="energy" type="radio" name="drink">
-      Whats preferred drink
-    </label>
-      <label for="drink">
-      <input id="ocean" type="radio" name="landscape" checked>
-      <input id="mountains" type="radio" name="landscape">
-      <input id="dessert" type="radio" name="landscape">
-      Whats your preferred landscape
-    </label>
-  </label>
-  <label for="food">
-  <input id="pizza" type="radio" name="food" checked>
-  <input id="ramen" type="radio" name="food">
-  <input id="sushi" type="radio" name="food">
-  Whats your preferred meal
-</label>
-</label>
-<label for="software">
-<input id="mac" type="radio" name="software"checked>
-<input id="pc" type="radio" name="software">
-<input id="linux" type="radio" name="software">
-Which do you prefer
-</label>
+    <div >Astrological Sign
+      <input id="sign" type="text"  name="sign">
+    </div>
+    <h6>Whats your Preferred morning drink</h6>
+    <div >
+      <input type="radio" value="1" name="drink" id="coffee" checked>
+      <label for="coffee">Coffee</label>
+    </div>
+    <div>
+      <input type="radio" value="2" name="drink" id="tea">
+      <label for="tea">Tea</label>
+    </div>
+    <div>
+      <input type="radio" value="3" name="drink" id="energy-drink">
+      <label for="energy-drink">Energy-drink</label>
+    </div>
+    <h6>Whats your preferred meal</h6>
+    <div >
+      <input type="radio" value="1" name="food" id="pizza" checked>
+      <label for="pizza">Pizaa</label>
+    </div>
+    <div>
+      <input type="radio" value="2" name="food" id="sushi">
+      <label for="sushi">Sushi</label>
+    </div>
+    <div>
+      <input type="radio" value="3" name="food" id="ramen">
+      <label for="ramen">Ramen</label>
+    </div>
+    <h6>Whats your preferred scenery</h6>
+    <div >
+      <input type="radio" value="1" name="landscape" id="mountains" checked>
+      <label for="mountains">Mountains</label>
+    </div>
+    <div>
+      <input type="radio" value="2" name="landscape" id="ocean">
+      <lanel for="ocean">Ocean</lanel>
+    </div>
+    <div>
+      <input type="radio" value="3" name="landscape" id="dessert">
+      <label for="dessert">Dessert</label>
+    </div>
+    <h6>Which do you prefer</h6>
+    <div >
+      <input type="radio" value="1" name="software" id="mac" checked>
+      <label for="mac">Mac</label>
+    </div>
+    <div>
+      <input type="radio" value="2" name="software" id="pc">
+      <label for="pc">PC</label>
+    </div>
+    <div>
+      <input type="radio" value="3" name="software" id="linux">
+      <label for="linux">Linux</label>
+    </div>
     <input type="submit" value="Submit">
   </form>
   <div class="language">
-    Based off your answers you should learn <span class="choice"></span> !!
+    <h2 id="output"></h2>
   </div>
+  <footer>Thanks for Visiting</footer>
 </body>
 </html>

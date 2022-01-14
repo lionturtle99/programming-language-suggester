@@ -12,7 +12,6 @@ function langCompat(user, lang) {
       userScore += 1;
     }
   }
-  console.log(typeof userScore);
   return userScore;
 }
 
@@ -35,8 +34,6 @@ $(document).ready(function() {
     
     for (let key in languages) {
       let tempMatch = langCompat(userChoices, languages[key]);
-
-      console.log(tempMatch)
       
       if (tempMatch > bestMatch[1]) {
         bestMatch = [key, tempMatch];
