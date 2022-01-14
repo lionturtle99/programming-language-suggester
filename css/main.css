@@ -1,13 +1,22 @@
 body {
   font-family:'Times New Roman', Times, serif;
+  background-image:url("../img/matrix.jpeg");
+  color:white;
 }
 h1 {
   text-align: center;
   margin: 1em 0 2em;
-  color: green;
 }
 .language {
   display: none;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 45em;
+  text-align: center;
+  background: linear-gradient(217deg, rgba(226, 0, 0, 0.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(60, 255, 0, 0.822), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0, 38, 255, 0.8), rgba(0,0,255,0) 70.71%);
 }
 form {
   width: 80%;
@@ -18,7 +27,6 @@ form {
 }
 h6 {
   margin-top: 15px;
-  color:rgb(0, 0, 0);
 }
 footer {
   margin: 3em 0 3em;
