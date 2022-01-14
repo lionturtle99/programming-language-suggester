@@ -26,11 +26,6 @@ $(document).ready(function() {
     let userChoices = [drink, food, landscape, software];
 
     let bestMatch = ["", 0];
-
-    if (userSign === "" || userSign.length < 3) {
-      $("#output").text("Please input a actual astrological sign");
-      return;
-    }
     
     for (let key in languages) {
       let tempMatch = langCompat(userChoices, languages[key]);
@@ -41,6 +36,11 @@ $(document).ready(function() {
     }
 
     $("#output").text("You most match with " + bestMatch[0] + " with a score of " + bestMatch[1] + " !!");
-    $(".language").show();
+
+    if (userSign === "" || userSign.length < 3) {
+      $("#output").text("Please input a actual astrological sign");
+    }
+
+    $(".language").fadeIn().delay(3000).fadeOut();
   });
 });
